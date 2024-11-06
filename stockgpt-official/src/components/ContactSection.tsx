@@ -76,7 +76,7 @@ export default function ContactSection() {
                 transition={{ delay: index * 0.2 }}
                 className="glass-card p-4 sm:p-6 rounded-lg backdrop-blur-sm"
               >
-                <p className="text-sm sm:text-base text-white/80 mb-3 sm:mb-4">"{item.content}"</p>
+                <p className="text-sm sm:text-base text-white/80 mb-3 sm:mb-4">{item.content}</p>
                 <div className="text-white/60 text-xs sm:text-sm">{item.author}</div>
               </motion.div>
             ))}
