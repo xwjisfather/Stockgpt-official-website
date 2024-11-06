@@ -1,0 +1,304 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-start: rgb(34, 211, 238); /* cyan-400 */
+  --gradient-middle: rgb(37, 99, 235); /* blue-600 */
+  --gradient-end: rgb(49, 46, 129);    /* indigo-900 */
+}
+
+/* 更新背景渐变 */
+body {
+  background: linear-gradient(
+    180deg,
+    var(--gradient-start) 0%,
+    var(--gradient-middle) 30%,
+    var(--gradient-end) 100%
+  );
+}
+
+/* 深色圆弧 */
+.dark-arc {
+  background: rgba(0, 0, 51, 0.8);
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  backdrop-filter: blur(10px);
+}
+
+/* 玻璃态卡片 */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 紫色圆形图标 */
+.purple-circle {
+  background: var(--accent-purple);
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.5);
+}
+
+/* 3D卡片效果 */
+.service-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.service-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover .service-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FAQ卡片 */
+.faq-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* 动画效果 */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.nav-glass-card {
+  background: rgba(255, 255, 255, 0.8); /* 增加白色背景的不透明度 */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03),
+    0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+/* 导航链接悬浮效果 */
+.nav-link-hover {
+  background: rgba(51, 65, 85, 0.08);
+  transition: all 0.2s ease;
+}
+
+/* 活跃状态的导航项 */
+.nav-link-active {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stats section 特效 */
+.stats-gradient {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 100%
+  );
+}
+
+/* 数字动画效果 */
+@keyframes numberGrow {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.stat-number {
+  animation: numberGrow 0.6s ease-out forwards;
+}
+
+
+/* 创新解决方案卡片样式 */
+.solution-card {
+  position: relative;
+}
+
+.solution-card .glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.solution-card:hover .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* 连接线动画 */
+@keyframes pulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.2; }
+}
+
+.connection-line {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Service Cards */
+.perspective-container {
+  perspective: 1000px;
+}
+
+.service-card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover {
+  transform: translateZ(20px);
+}
+
+/* FAQ Cards */
+.faq-card {
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Social Icons */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.footer-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(79, 70, 229, 0.1) 0%,
+    rgba(109, 40, 217, 0.2) 100%
+  );
+}
+
+.footer-link {
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+  transform: translateX(4px);
+}
+
+css
+
+/* styles/globals.css */
+
+/* 响应式容器 */
+.container-responsive {
+  width: 100%;
+  max-width: 80rem; /* 等于 max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;  /* 等于 px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-responsive {
+    padding-left: 1.5rem;  /* 等于 sm:px-6 */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-responsive {
+    padding-left: 2rem;  /* 等于 lg:px-8 */
+    padding-right: 2rem;
+  }
+}
+
+/* 响应式文本 */
+.text-responsive {
+  font-size: 1rem;  /* 等于 text-base */
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .text-responsive {
+    font-size: 1.125rem;  /* 等于 md:text-lg */
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-responsive {
+    font-size: 1.25rem;  /* 等于 lg:text-xl */
+  }
+}
+
+/* 响应式标题 */
+.heading-responsive {
+  font-size: 1.5rem;  /* 等于 text-2xl */
+  font-weight: 700;   /* 等于 font-bold */
+}
+
+@media (min-width: 768px) {
+  .heading-responsive {
+    font-size: 1.875rem;  /* 等于 md:text-3xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-responsive {
+    font-size: 2.25rem;  /* 等于 lg:text-4xl */
+  }
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+  .glass-card {
+    padding: 1rem 1.5rem;  /* 等于 px-4 py-6 */
+  }
+  
+  .container {
+    padding-left: 1rem;  /* 等于 px-4 */
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;  /* 等于 text-4xl */
+  }
+  
+  .section-padding {
+    padding-top: 3rem;    /* 等于 py-12 */
+    padding-bottom: 3rem;
+  }
+}
+
+.nav-glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  .nav-glass-card {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
