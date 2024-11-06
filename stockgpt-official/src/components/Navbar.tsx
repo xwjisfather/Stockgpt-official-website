@@ -86,6 +86,7 @@ export default function Navbar() {
     { href: "home", label: "首页", isExternal: false },
     { href: "fund", label: "智富汇基金", isExternal: false },
     { href: "pricing", label: "订阅计划", isExternal: false },
+    { href: "news", label: "新闻", isExternal: false },
     { href: "contact", label: "联系我们", isExternal: false },
     { href: "https://tradingwithai.org/zh", label: "聊天机器人", isExternal: true }
   ];
