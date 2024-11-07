@@ -90,7 +90,7 @@ export default function Footer() {
         <div className="pt-6 sm:pt-8 border-t border-white/10">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-white/40 text-xs sm:text-sm text-center sm:text-left">
-              © 2024 智富汇 · RichMaster StockGPT. 保留所有权利
+              © 2024 智富汇 · RichMaster GPT. 保留所有权利
             </div>
             <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
               <a href="#" className="text-white/40 text-xs sm:text-sm hover:text-white/60 transition-colors">
