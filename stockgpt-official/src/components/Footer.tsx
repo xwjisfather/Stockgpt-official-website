@@ -4,32 +4,32 @@ import { motion } from 'framer-motion';
 
 export default function Footer() {
   const footerLinks = {
-    产品服务: [
+    產品服務: [
       { label: "智能分析", href: "#" },
-      { label: "投资策略", href: "#" },
-      { label: "价格方案", href: "#" },
+      { label: "投資策略", href: "#" },
+      { label: "價格方案", href: "#" },
       { label: "功能更新", href: "#" },
     ],
-    关于我们: [
-      { label: "公司介绍", href: "#" },
-      { label: "加入我们", href: "#" },
-      { label: "新闻动态", href: "#" },
-      { label: "联系方式", href: "#" },
+    關於我們: [
+      { label: "公司介紹", href: "#" },
+      { label: "加入我們", href: "#" },
+      { label: "新聞動態", href: "#" },
+      { label: "聯繫方式", href: "#" },
     ],
-    支持服务: [
-      { label: "帮助中心", href: "#" },
-      { label: "服务条款", href: "#" },
-      { label: "隐私政策", href: "#" },
-      { label: "服务状态", href: "#" },
+    支持服務: [
+      { label: "幫助中心", href: "#" },
+      { label: "服務條款", href: "#" },
+      { label: "隱私政策", href: "#" },
+      { label: "服務狀態", href: "#" },
     ]
   };
 
   return (
     <footer className="relative bg-gradient-to-b from-indigo-900 to-purple-900 pt-12 sm:pt-16 md:pt-20 pb-6 sm:pb-8 md:pb-10">
       <div className="container mx-auto px-4 sm:px-6">
-        {/* 主要内容 */}
+{/* 主要內容 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-14 md:mb-16">
-          {/* 品牌栏 */}
+          {/* 品牌欄 */}
           <div className="sm:col-span-2 md:col-span-1">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ export default function Footer() {
               className="mb-4 sm:mb-6"
             >
               <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
-                智富汇 · RichMaster
+                智富匯 · RichMaster
               </h3>
               <p className="text-white/60 text-xs sm:text-sm leading-relaxed">
-                通过创新科技赋能您的投资未来，打造值得信赖的智能金融服务平台。
+                通過創新科技賦能您的投資未來，打造值得信賴的智能金融服務平台。
               </p>
             </motion.div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* 链接栏 */}
+          {/* 鏈接欄 */}
           {Object.entries(footerLinks).map(([title, links], index) => (
             <motion.div
               key={title}
@@ -86,21 +86,21 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* 底部栏 */}
+        {/* 底部欄 */}
         <div className="pt-6 sm:pt-8 border-t border-white/10">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="text-white/40 text-xs sm:text-sm text-center sm:text-left">
-              © 2024 智富汇 · RichMaster StockGPT. 保留所有权利
+              © 2024 智富匯 · RichMaster StockGPT. 保留所有權利
             </div>
             <div className="flex flex-wrap justify-center sm:justify-end gap-4 sm:gap-6">
               <a href="#" className="text-white/40 text-xs sm:text-sm hover:text-white/60 transition-colors">
-                服务条款
+                服務條款
               </a>
               <a href="#" className="text-white/40 text-xs sm:text-sm hover:text-white/60 transition-colors">
-                隐私政策
+                隱私政策
               </a>
               <a href="#" className="text-white/40 text-xs sm:text-sm hover:text-white/60 transition-colors">
-                Cookie设置
+                Cookie設置
               </a>
             </div>
           </div>
