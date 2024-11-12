@@ -4,41 +4,41 @@ import { motion } from "framer-motion";
 export default function ContactSection() {
     const faqs = [
       {
-        question: "智富汇提供哪些服务？",
-        answer: "我们提供全方位的智能投资解决方案，包括股票分析、市场趋势预测、个性化投资建议和实时市场动态追踪等服务。"
+        question: "智富匯提供哪些服務？",
+        answer: "我們提供全方位的智能投資解決方案，包括股票分析、市場趨勢預測、個性化投資建議和實時市場動態追蹤等服務。"
       },
       {
-        question: "如何保证投资建议的质量？",
-        answer: "我们采用先进的AI技术，结合专业金融团队的审核，确保每个投资建议都经过严格的分析和验证。"
+        question: "如何保證投資建議的質量？",
+        answer: "我們採用先進的AI技術，結合專業金融團隊的審核，確保每個投資建議都經過嚴格的分析和驗證。"
       },
       {
-        question: "平台如何保障用户的数据安全？",
-        answer: "我们使用银行级别的加密技术保护用户数据，严格遵守隐私保护协议，确保您的投资数据安全。"
+        question: "平臺如何保障用戶的數據安全？",
+        answer: "我們使用銀行級別的加密技術保護用戶數據，嚴格遵守隱私保護協議，確保您的投資數據安全。"
       },
       {
-        question: "如何开始使用智富汇服务？",
-        answer: "只需简单注册账号，即可体验我们的基础服务。升级至专业版可享受更全面的投资分析工具。"
+        question: "如何開始使用智富匯服務？",
+        answer: "只需簡單註冊賬號，即可體驗我們的基礎服務。升級至專業版可享受更全面的投資分析工具。"
       }
     ];
   
     const testimonials = [
       {
-        content: "智富汇帮助我更好地理解市场动态，提供的分析非常专业，对投资决策很有帮助！",
-        author: "专业投资者"
+        content: "智富匯幫助我更好地理解市場動態，提供的分析非常專業，對投資決策很有幫助！",
+        author: "專業投資者"
       },
       {
-        content: "AI分析准确度很高，市场预测和风险提示功能特别实用，值得推荐。",
-        author: "理财经理"
+        content: "AI分析準確度很高，市場預測和風險提示功能特別實用，值得推薦。",
+        author: "理財經理"
       },
       {
-        content: "界面直观友好，新手也能快速上手，客服响应及时，体验很好。",
-        author: "个人投资者"
+        content: "界面直觀友好，新手也能快速上手，客服響應及時，體驗很好。",
+        author: "個人投資者"
       }
     ];
 
     return (
       <section id="contact" className="py-12 sm:py-16 md:py-24 relative bg-gradient-to-b from-blue-900 to-purple-900">
-        {/* 产品介绍 */}
+       {/* 產品介紹 */}
         <div className="container mx-auto px-4 mb-12 sm:mb-16 md:mb-24">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -46,15 +46,15 @@ export default function ContactSection() {
             className="text-center max-w-3xl mx-auto px-4 sm:px-6"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
-              智富汇 · RichMaster GPT
+              智富匯 · RichMaster GPT
             </h2>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              将为投资者提供创新的金融体验。通过我们的先进技术和专业团队，我们有信心在未来的市场中取得成功。期待您的支持和合作。
+              將為投資者提供創新的金融體驗。通過我們的先進技術和專業團隊，我們有信心在未來的市場中取得成功。期待您的支持和合作。
             </p>
           </motion.div>
         </div>
   
-        {/* 用户评价 */}
+        {/* 用戶評價 */}
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 sm:mb-16 md:mb-20">
             <motion.h2 
@@ -62,8 +62,8 @@ export default function ContactSection() {
               animate={{ opacity: 1, y: 0 }}
               className="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4"
             >
-              用户心声<br />
-              <span className="text-white/60 text-lg sm:text-xl">真实反馈</span>
+              用戶心聲<br />
+              <span className="text-white/60 text-lg sm:text-xl">真實反饋</span>
             </motion.h2>
           </div>
   
@@ -82,10 +82,10 @@ export default function ContactSection() {
             ))}
           </div>
   
-          {/* 常见问题 */}
+{/* 常見問題 */}
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8 text-center">
-              常见问题
+              常見問題
             </h3>
             <div className="space-y-3 sm:space-y-4">
               {faqs.map((faq, index) => (
@@ -103,11 +103,11 @@ export default function ContactSection() {
             </div>
           </div>
   
-          {/* 社区加入 */}
+{/* 社區加入 */}
           <div className="text-center mt-12 sm:mt-16 md:mt-20">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 sm:mb-8">
-              加入我们的<br />
-              投资者社区
+              加入我們的<br />
+              投資者社區
             </h3>
             <div className="flex justify-center gap-3 sm:gap-4">
               {['微信', '知乎', '微博'].map((social) => (
