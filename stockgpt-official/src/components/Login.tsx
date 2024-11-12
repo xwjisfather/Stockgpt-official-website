@@ -66,7 +66,7 @@ export default function Login({ isOpen, onClose }: LoginProps) {
                 </svg>
               </button>
 
-              <h2 className="text-2xl font-bold text-slate-800 mb-6">登录</h2>
+              <h2 className="text-2xl font-bold text-slate-800 mb-6">登錄</h2>
               {error && (
                 <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg text-sm">
                   {error}
@@ -76,7 +76,7 @@ export default function Login({ isOpen, onClose }: LoginProps) {
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
-                      邮箱
+                      郵箱
                     </label>
                     <input
                       type="email"
@@ -88,7 +88,7 @@ export default function Login({ isOpen, onClose }: LoginProps) {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
-                      密码
+                      密碼
                     </label>
                     <input
                       type="password"
@@ -105,7 +105,7 @@ export default function Login({ isOpen, onClose }: LoginProps) {
                       ${isLoading ? 'opacity-50 cursor-not-allowed' : 'hover:bg-blue-700'}
                       transition-colors`}
                   >
-                    {isLoading ? '登录中...' : '登录'}
+                    {isLoading ? '登錄中...' : '登錄'}
                   </button>
                 </div>
               </form>
