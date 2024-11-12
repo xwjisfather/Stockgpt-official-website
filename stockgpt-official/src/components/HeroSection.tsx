@@ -6,11 +6,11 @@ import { motion } from 'framer-motion';
 
 export default function HeroSection() {
 
-  const stats = [
+ const stats = [
     {
       percent: "100%",
       label: "安全保障",
-      prefix: "为您提供"
+      prefix: "為您提供"
     },
     {
       percent: "90%",
@@ -19,17 +19,17 @@ export default function HeroSection() {
     },
     {
       percent: "100%",
-      label: "客户满意度",
-      prefix: "为您提供"
+      label: "客戶滿意度",
+      prefix: "為您提供"
     }
   ];
 
   const partners = [
-    '阿里云',
-    '腾讯云',
-    '华为云',
-    '亚马逊云',
-    '微软云'
+    '阿里雲',
+    '騰訊雲',
+    '華為雲',
+    '亞馬遜雲',
+    '微軟雲'
   ];
 
   return (
@@ -57,7 +57,7 @@ export default function HeroSection() {
           className="relative z-10 text-center pt-16 md:pt-32 px-4"
         >
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-8 md:mb-16">
-            赋能现代科技<br />创新未来
+            賦能現代科技<br />創新未來
           </h1>
         </motion.div>
 
