@@ -3,22 +3,22 @@
 import { motion } from 'framer-motion';
 
 export default function FundSection() {
-  const fundFeatures = [
+const fundFeatures = [
     {
       title: "智能量化策略",
-      description: "运用先进的AI算法和大数据分析，实现全天候智能交易，把握最佳投资时机",
+      description: "運用先進的AI算法和大數據分析，實現全天候智能交易，把握最佳投資時機",
       position: "left",
       icon: "📊"
     },
     {
-      title: "风险智控系统",
-      description: "独创的多维度风险评估体系，实时监控市场波动，确保资金安全",
+      title: "風險智控系統",
+      description: "獨創的多維度風險評估體系，即時監控市場波動，確保資金安全",
       position: "center",
       icon: "🛡️"
     },
     {
       title: "收益最大化",
-      description: "透明的投资流程，专业的资产配置，为您实现稳健收益",
+      description: "透明的投資流程，專業的資產配置，為您實現穩健收益",
       position: "right",
       icon: "📈"
     }
@@ -34,10 +34,10 @@ export default function FundSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            智富汇基金
+            智富匯基金
           </h2>
           <p className="text-2xl text-white/60">
-            创新的智能投资解决方案
+            創新的智能投資解決方案
           </p>
         </motion.div>
 
@@ -111,9 +111,9 @@ export default function FundSection() {
         >
           <div className="flex justify-center gap-12">
             {[
-              { value: "50亿+", label: "管理资产规模" },
+              { value: "50億+", label: "管理資產規模" },
               { value: "25%", label: "年化收益率" },
-              { value: "100%", label: "资金安全率" }
+              { value: "100%", label: "資金安全率" }
             ].map((stat, index) => (
               <motion.div
                 key={index}
