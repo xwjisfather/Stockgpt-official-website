@@ -2,79 +2,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-// import Login from './Login';
-// import Register from './Register';
-// import { useAuth } from '@/contexts/AuthContext';
-// import { useEffect, useState } from 'react';
+
 
 export default function HeroSection() {
-//   const [showLogin, setShowLogin] = useState(false);
-//   const [showRegister, setShowRegister] = useState(false);
-// // 使用 try-catch 包裹 useAuth，只声明一次
-// let isAuthenticated = false;
-// let logout = () => {};
 
-// try {
-//   const auth = useAuth();
-//   isAuthenticated = auth.isAuthenticated;
-//   logout = auth.logout;
-// } catch (error) {
-//   console.error('Auth context error:', error);
-// }
-
-// // 添加调试用的 useEffect
-// useEffect(() => {
-//   console.log('Auth state:', { isAuthenticated, showLogin, showRegister });
-// }, [isAuthenticated, showLogin, showRegister]);
-
-// const handleLoginClick = () => {
-//   console.log('Login button clicked');
-//   setShowLogin(true);
-// };
-
-// const handleRegisterClick = () => {
-//   console.log('Register button clicked');
-//   setShowRegister(true);
-// };
-
-// const handleLogoutClick = () => {
-//   console.log('Logout button clicked');
-//   logout();
-// };
-
-// // 渲染登录/注册按钮的函数
-// const renderAuthButtons = () => {
-//   console.log('Rendering auth buttons, isAuthenticated:', isAuthenticated);
-  
-//   return (
-//     <div className="absolute top-4 right-4 z-10 flex items-center space-x-4">
-//       {isAuthenticated ? (
-//         <button
-//           onClick={handleLogoutClick}
-//           className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-full hover:bg-red-700 transition-colors"
-//         >
-//           退出登录
-//         </button>
-//       ) : (
-//         <>
-//           <button
-//             onClick={handleLoginClick}
-//             className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors"
-//           >
-//             登录
-//           </button>
-//           <button
-//             onClick={handleRegisterClick}
-//             className="px-4 py-2 text-sm font-medium text-blue-600 bg-white rounded-full hover:bg-blue-50 transition-colors"
-//           >
-//             注册
-//           </button>
-//         </>
-//       )}
-//     </div>
-//   );
-// };
-  
   const stats = [
     {
       percent: "100%",
