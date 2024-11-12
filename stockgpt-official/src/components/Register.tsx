@@ -77,7 +77,7 @@ export default function Register({ isOpen, onClose }: RegisterProps) {
                 <div className="space-y-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
-                      邮箱
+                      郵箱
                     </label>
                     <input
                       type="email"
@@ -89,7 +89,7 @@ export default function Register({ isOpen, onClose }: RegisterProps) {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
-                      密码
+                      密碼
                     </label>
                     <input
                       type="password"
