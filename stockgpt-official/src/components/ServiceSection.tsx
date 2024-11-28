@@ -5,40 +5,40 @@ import { motion } from 'framer-motion';
 export default function PricingSection() {
   const plans = [
     {
-      title: "基础版",
+      title: "基礎版",
       price: "19",
       period: "/月",
       features: [
-        "最多5个项目",
-        "基础数据分析",
-        "24/7技术支持",
-        "1个团队成员"
+        "最多5個項目",
+        "基礎數據分析",
+        "24/7技術支持",
+        "1個團隊成員"
       ],
       popularTag: false,
       icon: "🚀"
     },
     {
-      title: "专业版",
+      title: "專業版",
       price: "49",
       period: "/月",
       features: [
-        "无限项目数量",
-        "高级数据分析",
-        "优先技术支持",
-        "5个团队成员"
+        "無限項目數量",
+        "高級數據分析",
+        "優先技術支持",
+        "5個團隊成員"
       ],
       popularTag: true,
       icon: "⭐"
     },
     {
-      title: "企业版",
+      title: "企業版",
       price: "99",
       period: "/月",
       features: [
-        "定制解决方案",
-        "专属技术支持",
-        "API接口访问",
-        "无限团队成员"
+        "定製解決方案",
+        "專屬技術支持",
+        "API接口訪問",
+        "無限團隊成員"
       ],
       popularTag: false,
       icon: "🏢"
@@ -53,8 +53,8 @@ export default function PricingSection() {
           animate={{ opacity: 1, y: 0 }}
           className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-16"
         >
-          全套服务方案<br />
-          <span className="text-white/60">灵活订阅计划</span>
+          全套服務方案<br />
+          <span className="text-white/60">靈活訂閱計劃</span>
         </motion.h2>
 
         <div className="flex flex-col md:flex-row justify-center md:gap-8 gap-6">
@@ -69,7 +69,7 @@ export default function PricingSection() {
               <div className="glass-card p-6 md:p-8 rounded-lg h-full border-l border-white/10 relative overflow-hidden">
                 {plan.popularTag && (
                   <div className="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-blue-500 px-3 py-1 rounded-full text-xs text-white">
-                    热门选择
+                    熱門選擇
                   </div>
                 )}
                 <div className="text-2xl md:text-3xl mb-4">{plan.icon}</div>
@@ -94,7 +94,7 @@ export default function PricingSection() {
                   whileTap={{ scale: 0.95 }}
                   className="w-full mt-6 md:mt-8 py-2.5 md:py-3 px-6 rounded-lg bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm md:text-base font-medium hover:opacity-90 transition-opacity"
                 >
-                  立即开始
+                  立即開始
                 </motion.button>
               </div>
             </motion.div>
